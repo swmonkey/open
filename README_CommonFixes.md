@@ -5,4 +5,5 @@ Chrome
 Common Fixes
 
 *Change Default Browser* 
-chrome://settings/
+chrome://settings/   
+edge://settings/profiles
