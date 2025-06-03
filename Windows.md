@@ -7,4 +7,4 @@ ext:xlsx
 
 
 Windows - find content in file
-findstr /s /i /m "your_text_string" *.txt
+<code>findstr /s /i /m "your_text_string" *.txt</code>
