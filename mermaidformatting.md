@@ -112,6 +112,7 @@ flowchart TB
 
 
 # Hiding
+1. Best Option
 ```mermaid
 flowchart LR
     A[Visible]
@@ -121,4 +122,29 @@ flowchart LR
     A --> B --> C
 
     style B fill:none,stroke:none,color:transparent
+```
+2. Hiding Links
+```mermaid
+flowchart LR
+    A --> B:::hidden
+    B --> C
+
+    classDef hidden stroke:transparent
+```
+   
+```mermaid
+flowchart LR
+    A --> B
+    B --> C
+
+    linkStyle 0 stroke:transparent
+```
+
+```mermaid
+flowchart LR
+    A --> spacer --> B
+
+    spacer[""]:::hidden
+
+    classDef hidden fill:none,stroke:none
 ```
