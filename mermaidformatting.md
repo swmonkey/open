@@ -40,6 +40,13 @@ A -.- Dotted line (no arrow)
 A -->|HTTPS JSON| B
 A -.->|Async event| B
 
+Add a class  
+:::sync
+:::async
+
+A:::compute    - styles the node
+A --> B:::sync - styles the line
+
 Style by link class (cleaner, scalable)
 ```mermaid
 flowchart LR
@@ -103,3 +110,15 @@ flowchart TB
     style Thick fill:none,stroke:#16a34a,stroke-width:4px
 ```
 
+
+# Hiding
+```mermaid
+flowchart LR
+    A[Visible]
+    B[Hidden helper]
+    C[Visible]
+
+    A --> B --> C
+
+    style B fill:none,stroke:none,color:transparent
+```
