@@ -106,6 +106,19 @@ gantt
 
 ---
 
+## Shapes ##
+((Circle)) - Used for start/end  
+Often means initialisation, entry point, or setup phase  
+{{Hexagon}} - Represents a preparation step  
+
+Syntax	Shape	Typical meaning  
+( )	Rounded	Process  
+(( ))	Circle	Start / End  
+[ ]	Rectangle	Action  
+{ }	Diamond	Decision  
+{{ }}	Hexagon	Preparation / Build  
+[/ /]	Parallelogram	Input / Output  
+
 ## GitHub-Friendly Notes
 
 * Must use fenced blocks: ` ```mermaid `
