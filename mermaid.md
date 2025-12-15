@@ -4,10 +4,13 @@ This file shows **common Mermaid diagrams** that render natively in **GitHub Mar
 
 > GitHub automatically renders Mermaid blocks inside fenced code blocks marked as `mermaid`.
 
+## How
 1. Choose Diagram - see below
 2. Add links e.g.
+3. Color
+4. Notes
 
-Links
+2. Links
 ```mermaid
 flowchart LR
     API[Backend API]:::service
@@ -54,7 +57,29 @@ flowchart LR
     A -.-> Note["Reads & writes\nJSON payload"]
 
     style Note fill:#f9fafb,stroke:#9ca3af,stroke-dasharray: 5 5
-```    
+```
+```mermaid
+sequenceDiagram
+    Lambda->>DB: Query data
+    Note right of DB: Encrypted at rest
+```
+
+5. Subgraph
+```mermaid
+flowchart TB
+    subgraph AWS["AWS Account"]
+        Lambda
+        DB[(RDS)]
+    end
+
+    subgraph External["External Systems"]
+        API[3rd-party API]
+    end
+
+    Lambda --> DB
+    Lambda --> API
+```
+    
 ---
 1. Flowchart  
 1ai Flowchart LR (Left Right)
@@ -271,18 +296,6 @@ gantt
 
 ---
 
-## Shapes ##
-((Circle)) - Used for start/end  
-Often means initialisation, entry point, or setup phase  
-{{Hexagon}} - Represents a preparation step  
-
-Syntax	Shape	Typical meaning  
-( )	Rounded	Process  
-(( ))	Circle	Start / End  
-[ ]	Rectangle	Action  
-{ }	Diamond	Decision  
-{{ }}	Hexagon	Preparation / Build  
-[/ /]	Parallelogram	Input / Output  
 
 ## GitHub-Friendly Notes
 
