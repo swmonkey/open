@@ -67,6 +67,12 @@ function hello($name) {
 }
 ```
 
+```mermaid
+flowchart TD
+
+
+```
+
 ### Inline Code
 
 Use `npm install` to install dependencies.
