@@ -36,6 +36,21 @@ Another example with descriptive title
   
 ```- [Web Development](https://www.codecademy.com/catalog/subject/web-development 'Build modern websites and web applications')```
 
+1. Writing Effective Link Text
+Always use descriptive, meaningful text that clearly indicates the link destination. Avoid generic phrases that provide no context about where the link leads.
+
+Good examples:
+
+Read the [Python style guide](https://pep8.org) for coding standards.
+Download the [latest software release] (https://github.com/project/releases/latest).  
+
+```
+Read the [Python style guide](https://pep8.org) for coding standards.
+Download the [latest software release] (https://github.com/project/releases/latest).
+```
+
+
+
 ## Lists
 
 ### Unordered List
