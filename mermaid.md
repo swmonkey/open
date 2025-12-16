@@ -9,6 +9,7 @@ This file shows **common Mermaid diagrams** that render natively in **GitHub Mar
 2. Add links e.g.
 3. Color
 4. Notes
+5. Comments %%comment
 
 2. Links
 ```mermaid
@@ -64,7 +65,11 @@ sequenceDiagram
     Note right of DB: Encrypted at rest
 ```
 
-5. Subgraph
+5. Comments
+  The %% symbol is used for comments. Anything after %% on a line is ignored by the Mermaid renderer.
+
+    Diagrams
+   Subgraph
 ```mermaid
 flowchart TB
     subgraph AWS["AWS Account"]
