@@ -1,4 +1,6 @@
 ## Shapes ##
+https://docs.mermaidchart.com/mermaid/flowchart/shapes
+
 ((Circle)) - Used for start/end  
 Often means initialisation, entry point, or setup phase  
 {{Hexagon}} - Represents a preparation step  
@@ -17,12 +19,15 @@ Syntax	Shape	Typical meaning
 |-----------|-------------|---------------------------|
 | ( )       | Rounded     | Process                  |
 | (( ))     | Circle      | Start / End              |
+| ([ ])     | Rounded Box  | Start / End              |
 | [ ]       | Rectangle   | Action                   |
 | { }       | Diamond     | Decision                 |
 | {{ }}     | Hexagon     | Preparation / Build      |
 | [/ /]     | Parallelogram| Input / Output          |
 | [()]      | Database     | Data                    |
-
+| [[ ]]      | Double Border     | Subroutine                    |
+| >/text]    |  Asymmetric (flag‑like) node may not be liked     | Data                    |
+| [/text\\] and [\\text/]    |  Trapezoid and reversed trapezoid variations | Data                    |
 
 ```mermaid
  flowchart TB
@@ -32,16 +37,23 @@ Syntax	Shape	Typical meaning
  startorend((start))
         DB[(RDS)]
     end
-    subgraph External["systemx"]
+    subgraph Externalx["systemx"]
+   
+        DiamondDecision{Decision}
+        Test[[test]]
+    end
+  subgraph Externaly["systemy"]
         API[3rd-party API]
+        API2([3rd-party API2])
         Hex{{Hexagon}}
-        DiamondDecision{Decision}	 
+       
     end
   
 
     subgraph External["External Systems"]
         Database[(DB)]
 InputorOutput[/Parallelogram/]
+nodeId>This is an asymmetric shaped node]
     end
 ```
 ## Lines
