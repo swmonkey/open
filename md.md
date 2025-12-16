@@ -28,6 +28,10 @@ This file demonstrates the most common and useful **Markdown (.md)** elements. Y
 
 ---
 
+## Links
+[Link text Here](https://link-url-here.org)  
+```[Link text Here](https://link-url-here.org)```
+
 ## Lists
 
 ### Unordered List
@@ -37,14 +41,25 @@ This file demonstrates the most common and useful **Markdown (.md)** elements. Y
 
   * Nested item
   * Nested item
+ 
+  ```
+  * 1
+  * 2
+      * 2.1
+    ```
 
 ### Ordered List
 
 1. First item
 2. Second item
 3. Third item
+4. 
+```
+1. First item
+2. Second item
+3. Third item
+```
 
----
 
 ## Links & Images
 
