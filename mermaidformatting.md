@@ -55,6 +55,30 @@ flowchart LR
 
     classDef sync stroke:#2563eb,stroke-width:2px
     classDef async stroke:#dc2626,stroke-dasharray:5 5
+
+nodes
+style A fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0f172a
+
+Available properties
+* fill
+* stroke
+* stroke-width
+* stroke-dasharray
+* color (text)
+* opacity
+
+A:::compute  
+B:::data  
+C:::external  
+
+classDef compute fill:#e0f2fe,stroke:#0284c7  
+classDef data fill:#fef3c7,stroke:#f59e0b  
+classDef external fill:#fee2e2,stroke:#dc2626  
+
+✔ Reusable
+✔ Semantic
+✔ Maintainable
+
 ```
 
 | Style        | Meaning              | Example         |
@@ -65,6 +89,8 @@ flowchart LR
 | Dotted line  | Logical relationship | Dependency      |
 | No arrow     | Association          | Grouping        |
 
+
+##Colours
 
 ## Example
 Combined Example (Clear & Expressive)
@@ -109,7 +135,12 @@ flowchart TB
     style Dashed fill:none,stroke:#dc2626,stroke-dasharray:5 5
     style Thick fill:none,stroke:#16a34a,stroke-width:4px
 ```
-
+    style Solid fill:none,stroke:#2563eb  
+    style Dashed fill:none,stroke:#dc2626,stroke-dasharray:5 5  
+    style Thick fill:none,stroke:#16a34a,stroke-width:4px  
+    
+classDef sync stroke:#2563eb,stroke-width:2px  
+    classDef async stroke:#dc2626,stroke-dasharray:5 5   
 
 # Hiding
 1. Best Option
@@ -131,7 +162,7 @@ flowchart LR
 
     classDef hidden stroke:transparent
 ```
-   
+   3. Spacer Nodes
 ```mermaid
 flowchart LR
     A --> B
@@ -139,7 +170,7 @@ flowchart LR
 
     linkStyle 0 stroke:transparent
 ```
-
+4. Hiding Labels but Keeping Shapes
 ```mermaid
 flowchart LR
     A --> spacer --> B
