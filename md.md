@@ -30,7 +30,11 @@ This file demonstrates the most common and useful **Markdown (.md)** elements. Y
 
 ## Links
 [Link text Here](https://link-url-here.org)  
-```[Link text Here](https://link-url-here.org)```
+```[Link text Here](https://link-url-here.org)```  
+Another example with descriptive title
+- [Web Development](https://www.codecademy.com/catalog/subject/web-development 'Build modern websites and web applications')
+  
+```- [Web Development](https://www.codecademy.com/catalog/subject/web-development 'Build modern websites and web applications')```
 
 ## Lists
 
