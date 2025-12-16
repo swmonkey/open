@@ -12,6 +12,18 @@ Syntax	Shape	Typical meaning
 [/ /]	Parallelogram	Input / Output  
 [()]	Database	Data
 
+
+| Syntax    | Shape        | Typical Meaning           |
+|-----------|-------------|---------------------------|
+| ( )       | Rounded     | Process                  |
+| (( ))     | Circle      | Start / End              |
+| [ ]       | Rectangle   | Action                   |
+| { }       | Diamond     | Decision                 |
+| {{ }}     | Hexagon     | Preparation / Build      |
+| [/ /]     | Parallelogram| Input / Output          |
+| [()]      | Database     | Data                    |
+
+
 ```mermaid
  flowchart TB
     subgraph AWS["AWS Account"]
