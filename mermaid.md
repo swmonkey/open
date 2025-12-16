@@ -67,6 +67,11 @@ sequenceDiagram
 
 5. Comments
   The %% symbol is used for comments. Anything after %% on a line is ignored by the Mermaid renderer.
+The line %% Users at top is just a comment for humans, not part of the diagram. It’s often used to:
+
+Add notes or instructions for collaborators.
+Explain sections of the diagram (e.g., “%% Authentication flow starts here”).
+Temporarily disable code without deleting it.
 
     Diagrams
    Subgraph
