@@ -39,7 +39,7 @@ stop
 ``
 
 ## Partions
-
+```
 @startuml
 start
 partition Initialization {
@@ -53,7 +53,7 @@ partition Running {
 
 stop
 @enduml
-
+```
 
 
 
@@ -61,6 +61,7 @@ stop
  
 Icons
 <code>
+```
 @startuml
 participant Participant as Foo
 actor       Actor       as Foo1
@@ -79,9 +80,10 @@ Foo -> Foo6 : To collections
 Foo -> Foo7: To queue
 </code>
 @enduml
-
+```
 # Notes
 <code>
+```
 @startuml
 
 start
@@ -98,6 +100,7 @@ end note
 stop
 
 @enduml
+```
 </code>
 
 
