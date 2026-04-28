@@ -94,7 +94,7 @@ Image example:
 ## Code Blocks
 
 ### Fenced Code Block
-Use ` apostropies `npm install` ` 
+Use code between two ` or six (two blocks of three)
 
 ```php
 function hello($name) {
