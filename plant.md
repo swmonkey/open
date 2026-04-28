@@ -36,7 +36,7 @@ end note
 stop
 
 @enduml
-``
+```
 
 ## Partions
 ```
@@ -60,7 +60,7 @@ stop
 ## Sequence
  
 Icons
-<code>
+
 ```
 @startuml
 participant Participant as Foo
@@ -78,11 +78,11 @@ Foo -> Foo4 : To entity
 Foo -> Foo5 : To database
 Foo -> Foo6 : To collections
 Foo -> Foo7: To queue
-</code>
+
 @enduml
 ```
 # Notes
-<code>
+
 ```
 @startuml
 
@@ -101,6 +101,6 @@ stop
 
 @enduml
 ```
-</code>
+
 
 
