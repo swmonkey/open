@@ -4,7 +4,7 @@ alt + d for preview in vscode
 
 # Sequence 
 Icons
-
+<code>
 @startuml
 participant Participant as Foo
 actor       Actor       as Foo1
@@ -21,10 +21,11 @@ Foo -> Foo4 : To entity
 Foo -> Foo5 : To database
 Foo -> Foo6 : To collections
 Foo -> Foo7: To queue
+</code>
 @enduml
 
 # Notes
-
+<code>
 @startuml
 
 start
@@ -41,5 +42,6 @@ end note
 stop
 
 @enduml
+</code>
 
 
