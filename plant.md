@@ -1,8 +1,64 @@
+#Plantuml
 alt + d for preview in vscode
 
 [link]https://plantuml.com/activity-diagram-beta
 
-# Sequence 
+## Colours
+
+[Link]https://github.com/qywx/PlantUML-colors
+
+```
+@startuml name
+if (condition?) then
+  :error; <<#pink>>
+  kill
+endif
+:action; <<#palegreen>>
+@enduml
+```
+
+## NoteShadowing
+
+```
+@startuml
+
+start
+:foo1;
+floating note left: This is a note
+:foo2;
+note right
+  This note is on several
+  //lines// and can
+  contain <b>HTML</b>
+  ====
+  * Calling the method ""foo()"" is prohibited
+end note
+stop
+
+@enduml
+``
+
+## Partions
+
+@startuml
+start
+partition Initialization {
+    :read config file;
+    :init internal variable;
+}
+partition Running {
+    :wait for user interaction;
+    :print information;
+}
+
+stop
+@enduml
+
+
+
+
+## Sequence
+ 
 Icons
 <code>
 @startuml
